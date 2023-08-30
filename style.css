@@ -1,0 +1,99 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  user-select: none;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #1c2833;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f7f5f2e6;
+  width: 90vmin;
+  border-radius: 2vmin;
+  padding: 3vw 5vw;
+  box-shadow: 6px 6px 31px 0px rgba(244, 208, 63, 0.7);
+}
+#searchArea {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+#wordInput {
+  font-size: 1vmax;
+  outline: none;
+  border: none;
+  padding: 1.5vmin;
+  width: 50%;
+  border-bottom: 0.7vmin solid #f4d03f;
+  border-radius: 1vmin;
+
+}
+#searchBtn {
+  font-size: 1vmax;
+  outline: none;
+  border: none;
+  padding: 0vmax 2.2vmax;
+  border-radius: 1vmin;
+  background-color: #f4d03f;
+  font-weight: 600;
+}
+#result {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+#word {
+  margin-top: 6vmax;
+  display: flex;
+  justify-content: space-between;
+}
+#word h3 {
+  font-size: 2vmax;
+}
+#word button {
+  padding: 1vmin;
+  background-color: transparent;
+  color: #f4d03f;
+  border: none;
+  outline: none;
+  font-size: 1.5vmax;
+}
+#details {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  gap: 1vmax;
+  color: #b3b6d4;
+  font-size: 0.9vmax;
+  margin: 1vmin 0 3vmin 0;
+}
+#wordMeaning {
+  width: 100%;
+  color: #575a7b;
+}
+#wordExample {
+  width: 100%;
+  color: #575a7b;
+  font-style: italic;
+  border-left: 0.7vmin solid #f4d03f;
+  margin-top: 3vmax;
+  padding-left: 2vmax;
+  min-height: 2vmax;
+}
+#errorMessage {
+  margin-top: 2vmax;
+  font-size: 2vmin;
+  color: #575a7b;
+}
