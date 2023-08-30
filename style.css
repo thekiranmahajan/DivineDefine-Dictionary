@@ -37,7 +37,6 @@ body {
   width: 50%;
   border-bottom: 0.7vmin solid #f4d03f;
   border-radius: 1vmin;
-
 }
 #searchBtn {
   font-size: 1vmax;
@@ -96,4 +95,55 @@ body {
   margin-top: 2vmax;
   font-size: 2vmin;
   color: #575a7b;
+}
+
+@media (max-width: 575.98px) {
+  #container {
+    width: 80vmin;
+    border-radius: 2vmin;
+    box-shadow: 3px 3px 26px 0px rgba(244, 208, 63, 0.7);
+  }
+  #wordInput {
+    font-size: 2vmax;
+    padding: 1.6vmin 3vmin;
+    width: 70%;
+    border-radius: 2vmin;
+    border-bottom: 0.5vmin solid #f4d03f;
+  }
+  #searchBtn {
+    font-size: 2vmax;
+    padding: 0vmax 2vmax;
+    border-radius: 2vmin;
+  }
+  #word {
+    margin-top: 4vmax;
+  }
+  #word h3 {
+    font-size: 5vmax;
+  }
+  #word button {
+    font-size: 3.4vmax;
+  }
+  #details {
+    gap: 1.5vmax;
+    font-size: 2vmax;
+  }
+  #wordMeaning {
+    font-size: 2.8vmax;
+  }
+  #wordExample {
+    font-size: 2.5vmax;
+    margin-top: 3vmax;
+    padding-left: 3.5vmax;
+    min-height: 2vmax;
+    margin-bottom: 3vmax;
+  }
+  #errorMessage {
+    margin-top: 3vmax;
+    font-size: 2vmin;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
 }
