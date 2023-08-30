@@ -32,23 +32,24 @@ searchBtn.addEventListener("click", () => {
             }</p>
             <p id="wordExample">${
               data[0].meanings[0].definitions[0].example ||
-              data[0].meanings[1].definitions[0].example ||
+              data[0].meanings[1]?.definitions[0]?.example ||
               "null"
             }</p>`;
       sound.setAttribute(
         "src",
         `${
-          data[0].phonetics[0].audio ||
-          data[0].phonetics[1].audio ||
-          data[0].phonetics[2].audio
+          data[0].phonetics[0]?.audio || //Optional Chaining (?.) Operator chatGPT's suggestion
+          data[0].phonetics[1]?.audio ||
+          data[0].phonetics[2]?.audio
         }`
       );
       console.log(data);
       console.log(sound);
     })
-    .catch((value) => {
+    .catch((error) => {
       result.innerHTML = `<h3 id="errorMessage">Sorry pal, we couldn't find definitions for the word you were looking for.</h3>`;
-      console.log(value);
+      console.log(error);
+      console.log(error.message);
     });
 });
 const pronounce = () => {
