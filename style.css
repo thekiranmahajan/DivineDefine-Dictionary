@@ -96,6 +96,19 @@ body {
   font-size: 2vmin;
   color: #575a7b;
 }
+#wordMeaning-copyBtn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#copyBtn {
+  padding: 1vmin;
+  background-color: transparent;
+  color: #f4d03f;
+  border: none;
+  outline: none;
+  font-size: 1.7vmax;
+}
 
 @media (max-width: 575.98px) {
   #container {
@@ -141,6 +154,9 @@ body {
   #errorMessage {
     margin-top: 3vmax;
     font-size: 2vmin;
+  }
+  #copyBtn {
+    font-size: 3.6vmax;
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
